@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html>
+ 
+   <head>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.14/Tone.js"></script>
+     
+     <link rel="stylesheet" href="style.css">
+     
+   </head>
+   
+   <body onload="initialize()">
+     <div id="game">
+       
+       <div class="headline">
+       Simon Sounds
+       </div>
+       <div class="blurb">
+        Let's see how obedient you are...repeat the pattern.
+       </div>
+       <div id="message">
+         Replace this text with message
+       </div>
+
+       <div id="startStopArea">
+        <button id="startBtn" onclick = "startGame()">
+          Start
+        </button>
+        <button id="stopBtn" class="hidden" onclick="stopGame()">
+          Stop
+        </button>
+       </div>
+
+       <div id="container"> 
+       </div>
+       
+    </div>
+     
+     
+     <script src="script.js"></script>
+   </body>
+   
+</html>

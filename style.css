@@ -1,0 +1,113 @@
+body{
+  background-color: DarkBlue;
+  font-family: helvetica, arial, sans-serif;
+  color:white;
+  padding:0;
+}
+#game{
+  position:absolute;
+  top: calc(50% - 300px);
+	left: calc(50% - 350px);
+}
+.headline {
+	font-family: verdana, arial, sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 20px;
+}
+.blurb {
+  margin-bottom: 16px;
+}
+#message {
+	display: none; /* Change to "inline-block" to show */
+  position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 18px;
+	background: white;
+	color: DarkBlue;
+	border: 4px solid fuchsia;
+	border-radius: 16px;
+	padding: 24px;
+}
+#container{
+	display: inline-block;
+  height:200px;
+  border:5px solid black;
+	margin-top: 32px;
+	overflow: hidden;
+}
+.whiteNote{
+	height:100%;
+	width:50px;
+	background:white;
+	float:left;
+	border-right:1px solid black;
+	position:relative;
+}
+.blackNote{
+  position:absolute;
+	height:65%;
+	width:55%;
+	z-index:1;
+	background:#777;
+  left:68%
+}
+
+/*startAndStop*/
+.hidden {
+	display: none;
+}
+
+#startStopArea > button{
+	height: 35px;
+	width: 100px;
+  margin-right: 70px;
+	border-radius: 50px;
+	border: none;
+  outline: none;
+	background: fuchsia;
+	color: dimgrey;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 1px;
+  
+	cursor: pointer;
+	transition: background 0.5s;
+}
+
+#startStopArea > button:first-child:hover{
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+}
+#startStopArea > button:last-child:hover{
+	background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+	background-size: 400%;
+}
+#startStopArea > button:first-child:before,
+#startStopArea > button:last-child:before{
+	content: '';
+	background: inherit;
+	border-radius: 50px;
+	filter: blur(20px);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+#startStopArea > button:first-child:hover:before,
+#startStopArea > button:last-child:hover:before{
+	opacity: 1;
+	z-index: -1;
+}
+#startStopArea > button:hover{
+	z-index: 1;
+	animation: glow 8s linear infinite;
+}
+@keyframes glow {
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400%;
+	}
+}
