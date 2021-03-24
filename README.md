@@ -41,7 +41,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](http://g.recordit.co/tJZy6c0XBQ.gif)
+![](http://g.recordit.co/8yFB6QRU1v.gif)
 
 
 
